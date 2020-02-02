@@ -1,0 +1,54 @@
+@charset "utf-8";
+.position_nav{height:45px; line-height:45px; font-size:16px;}
+.topMenu{width:1000px; margin:0px auto;}
+
+.ad_1{ width:1000px; height:50px; margin:0 auto; margin-top:10px;}
+.zt_con{ width:100%;}
+.h1_title{width:100%; height:40px; line-height:40px; font-size:19px; border-bottom:1px solid #ccc;}
+.h1_title li{ float:left; width:10%; text-align:center; height:38px;}
+.h1_title .current{ border-bottom:3px solid #fe6d07;}
+.h1_title .current a{color:#fe6d07;}
+.content{ width:100%;}
+.content dl{ width:100%; overflow:hidden; margin-top:12px; float:left;}
+.content dt{ width:330px; height:130px; display:block; float:left; border:1px solid #dedede}
+.content dd{display:block; float:left; margin-left:10px; width:508px;}
+.content dd h3{ font-size:16px; height:32px; line-height:32px;}
+.content dd p{ font-size:16px; line-height:27px; height:100px; overflow:hidden}
+.zt_right{}
+.zt_right li{ width:300px;}
+.zt_right img{ display:block; float:left; width:115px; height:65px; margin-right:5px;}
+.zt_right li p{ }
+.zt_right li span{ background:url(../../images/index/yuedu_icon.gif) no-repeat left; padding-left:20px;}
+/*我们的服务 begin*/
+#service{margin-top:12px;}
+.serviceBox{float:left;margin-right:8px;background-color:#fff6ec;padding:10px;margin-top:12px;height:220px;}
+.Service120{width:110px;}
+.Service175{width:150px;}
+.Service_right{margin-right:0;float:right;width:108px;}
+.serviceBox h3{text-align:center;padding-bottom:10px;border-bottom:1px solid #c6b5a4;}
+.serviceBox p{margin-top:5px;width:100%;text-align:center;}
+.serviceBox a{color:#74512a;font-size:13px;}
+/*我们的服务 end*/
+
+/*友情链接 begin*/
+.friendLink{margin-top:12px;}
+.friendLink h3{font-size:19px;font-weight:normal;height:40px;margin-bottom:12px;}
+.friendLink h3 a{background:url(../images/zt/footer_bg.gif) repeat-x;height:38px;line-height:38px;float:left;border:1px solid #f5cfc2;padding:0 10px;margin-right:8px;}
+.friendLink h3 a:hover{background-color:#ff8400;background-image:none;border:1px solid #ff8400;color:#FFF;}
+.friend_content li{float:left;width:11.1%;text-align:center;margin-bottom:8px;}
+.friend_content li img{width:100px;height:40px;border:1px solid #353535;}
+/*友情链接 end*/
+
+
+/*ad begin*/
+#ad_3{margin-top:15px;height:50px;}
+#ad_3 li{float:left;margin-right:10px;}
+#ad_3 .ad_right{margin-right:0;}
+#ad-4{margin-top:12px;}
+.ad_4{float:left;width:53.5%;}
+.ad_4 li{float:left;margin-right:12px;margin-bottom:12px;width:47.5%;overflow:hidden;}
+.ad_6 li{margin-bottom:10px;}
+.ad_7{margin-top:15px;}
+.ad_7 li{float:left;margin-right:10px;}
+.ad_7 .ad_right{float:right;margin-right:0;}
+/*ad end*/
