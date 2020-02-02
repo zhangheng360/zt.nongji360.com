@@ -1,0 +1,23 @@
+{{ javascript_include(constant('\WeChat::HTTP_JS_1'), false) }}
+{{ javascript_include(constant('\Conf::HTTP_WD')~'/js/wechatShare.js', false) }}
+<script type="text/javascript">
+wx.config({
+	debug:false,
+	appId:"{{ weChat.appID }}",
+	timestamp:"{{ weChat.signatureParams['timestamp'] }}",
+	nonceStr:"{{ weChat.signatureParams['noncestr'] }}",
+	signature:"{{ weChat.signature }}",
+	jsApiList:[
+		"onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo", "onMenuShareQZone",
+		"chooseImage", "uploadImage", "downloadImage", "getLocation"
+	]
+});
+wx.ready(function(){
+	wechatShare({
+		title:"{{ isset(title, 0) ? title : '农机360网农机商城' }}",
+		cont:"{{ isset(description) ? description : '' }}",
+		link:"{{ weChat.signatureParams['url'] }}",
+		imgUrl:"{{ isset(wxShareImage) ? wxShareImage : constant('\Conf::HTTP_WD') ~ '/images/wx_share_default.jpg' }}"
+	});
+});
+</script>

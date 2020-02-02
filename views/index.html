@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+<title>{{ (isset(title, 0) ? title : '农机专题') ~ (isset(TITLE_HIDE_NAME) ? '' : '_农机360网') }}</title>
+<meta name="keywords" content="{{ isset(keywords, 0) ? keywords : ' ' }}" />
+<meta name="description" content="{{ isset(description, 0) ? description : ' ' }}"/>
+{% if isset(MOBILE_URL, 0) %}<meta name="mobile-agent" content="format=html5;url={{ MOBILE_URL }}" />{% endif %}
+{{ stylesheet_link(constant('\Conf::HTTP_CODE') ~ '/css/global.css', false) }}
+{{ stylesheet_link('/css/a.css', false) }}
+{{ javascript_include(constant('\Conf::HTTP_CODE') ~ '/js/code.js', false) }}
+{{ javascript_include(constant('\Conf::HTTP_CODE') ~ '/js/conf.js', false) }}
+{{ javascript_include(constant('\Conf::HTTP_CODE') ~ '/js/jquery/jquery-1.9.1.min.js', false) }}
+<script type="text/javascript">window.BASEURI = '{{ BASEURI }}';</script>
+</head>
+<body>
+{{ content() }}
+{{ javascript_include(constant('\Conf::HTTP_CODE') ~ '/js/a/tongji/bdziyuan_push.js', false) }}
+{{ javascript_include(constant('\Conf::HTTP_CODE') ~ '/js/a/bdtongji_zt.js', false) }}
+</body>
+</html>
